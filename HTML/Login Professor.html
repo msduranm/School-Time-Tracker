@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <title>School Time Tracker</title>
+		<meta charset="UTF-8">
+        <link rel="shortcut icon" type="image/x-icon" href="../Imágenes/Logo.png">
+        <link rel="stylesheet" type="text/css" href="../CSS/Login Professor.css">
+		<link rel="stylesheet" href="../CSS/Fontello/animation.css">
+		<link rel="stylesheet" href="../CSS/Fontello/fontello.css">
+		<link rel="stylesheet" href="../CSS/Fontello/fontello-codes.css">
+		<link rel="stylesheet" href="../CSS/Fontello/fontello-embedded.css">
+		<link rel="stylesheet" href="../CSS/Fontello/fontello-ie7.css">
+		<link rel="stylesheet" href="../CSS/Fontello/fontello-ie7-codes.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+</head>
+<body>
+        <header>
+			<nav>
+				<a href="Student & Teacher.html"><i class="icon-left-open"></i>Regresar</a>
+			</nav>
+			<div align="center"><img src="../Imágenes/Title.png"/></div>
+          <hr color="#F5A5FA" size="7">
+        </header>
+		<br></br>
+	<img class="wave" src="../Imágenes/STT.png">
+	<div class="container">
+		<div class="img">
+			<img src="../Imágenes/Professor.svg">
+		</div>
+		<div class="login-content">
+			<form action="../PHP/Login Professor.php" method="POST" id="formulario">
+				<img src="../Imágenes/Professor.png">
+				<h2 class="title">Bienvenido</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div-user" id="email">
+           		   		<h5>Email o Documento</h5>
+           		   		<input type="email" name="email" class="input">
+						<p class="error-user">Email o Documento Incorrecto</p>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div-pass" id="password">
+           		    	<h5>Código Institucional o Contraseña</h5>
+           		    	<input type="password" name="password" class="input">
+						<p class="error-pass">Código o Contraseña Incorrecto</p>
+						<p class="error-pass-2">La contraseña debe contener al menos de 4 a 12 caracteres como máximo</p>
+            	   </div>
+            	</div>
+            	<a href="#">¿Olvidaste tu Contraseña?</a>
+            	<a href="#"><input type="submit" class="button" value="Ingresar"></a>
+				<p class="error-btn" id="error-btn"><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor ingrese los datos requeridos para poder ingresar.</p>
+            </form>
+        </div>
+    </div>
+	<script src="../JS/Login.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <footer>
+        @2022 - School Time Tracker Created By Nataly Alarcón, Marck Durán & Nasly Gallego
+    </footer>
+</body>
+</html>

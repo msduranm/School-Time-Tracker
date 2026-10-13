@@ -1,0 +1,184 @@
+*{
+	margin: 0px;
+}
+
+body{
+	background: #E4EFFF;
+}
+
+header{
+	background: #1386D1;
+	position: auto;
+	font-size: 66px;
+}
+
+img{
+	margin-left: -114px;
+}
+
+a[href="../Login Student.html"]{
+	color: white;
+	text-decoration: none;
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+a[href="../Login Student.html"]:hover{
+	color: #999;
+	transition: .3s;
+}
+
+nav[class="1"]{
+	float: left;
+	margin-left: 37px;
+	transform: translateY(-18%);
+}
+
+i[class="icon-logout"]{
+	font-size: 20px;
+}
+
+.container{
+	width: 90%;
+	max-width: 1200px;
+	margin: auto;
+}
+
+.container .btn-menu, .logo{
+	float: left;
+	line-height: 85px;
+	margin-left: -55px;
+}
+
+.container .btn-menu label{
+	color: #7064fc;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.container .menu{
+	float: right;
+	line-height: 70px;
+}
+
+.container .menu a{
+	display: inline-block;
+	padding: 15px 10px;
+	line-height: normal;
+	text-decoration: none;
+	color: #3EA1DD;
+	transition: all 0.3s ease;
+	border-bottom: 2px solid transparent;
+	font-size: 15px;
+}
+
+#btn-menu{
+	display: none;
+}
+
+.container-menu{
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	transition: all 500ms ease;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu{
+	opacity: 1;
+	visibility: visible;
+}
+
+.cont-menu{
+	background: linear-gradient(150deg, #A0CBFF, #AF82EC);
+	width: 100%;
+	max-width: 250px;
+	height: 100vh;
+	position: relative;
+	transition: all 500ms ease;
+	transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu{
+	transform: translateX(0%);
+}
+
+.cont-menu nav{
+	transform: translateY(8%);
+}
+
+.cont-menu nav a{
+	display: block;
+	text-decoration: none;
+	padding: 20px;
+	color: black;
+	border-left: 5px solid transparent;
+	transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover{
+	border-left: 5px solid #7064fc;
+	background: rgba(100, 100, 100, 0.5);
+	padding-left: 50px;
+}
+
+.cont-menu label{
+	position: absolute;
+	right: 5px;
+	top: 10px;
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+}
+
+i{
+	font-size: 30px;
+	color: white;
+}
+
+.container-menu .cont-menu nav .active{
+	background: rgba(100, 100, 100, 0.5);
+}
+
+.coming{
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+h1{
+	font-size: 60px;
+	letter-spacing: 15px;
+}
+
+hr[class="logo"]{
+	width: 50%;
+	margin: 30px auto;
+	border: 1.5px solid black;
+}
+
+p{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+#launch{
+	font-size: 40px;
+	word-spacing: 20px;
+}
+
+footer{
+	background: #1386D1;
+	position: fixed;
+	width: 100%;
+	padding: 20px;
+	bottom: 0;
+	text-align: center;
+	color: white;
+	font-family: Helvetica;
+	z-index: -1;
+}

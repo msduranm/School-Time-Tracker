@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>School Time Tracker</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../Imágenes/Logo.png">
+	<link rel="stylesheet" href="../../CSS/Menú/Messages.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/animation.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/fontello.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/fontello-codes.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/fontello-embedded.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/fontello-ie7.css">
+	<link rel="stylesheet" href="../../CSS/Fontello/fontello-ie7-codes.css">
+</head>
+<body>
+	<header>
+		<nav class="1">
+			<a href="../Login Student.html"><i class="icon-logout"></i>Logout</a>
+		</nav>
+		<div align="center"><img src="../../Imágenes/Title.png"/></div>
+		<hr color="#F5A5FA" size="7">
+	</header>
+	<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu" class="icon-menu"></label>
+		</div>
+	</div>
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="Home.html"><i class="icon-home"></i>Inicio</a>
+			<a href="Schedule.html"><i class="icon-school"></i>Horario</a>
+			<a href="Homeworks.html"><i class="icon-pencil"></i>Tareas</a>
+			<a href="Messages.html" class="active"><i class="icon-mail-alt"></i>Mensajería</a>
+			<a href="Multimedia/Multimedia.html"><i class="icon-video"></i>Multimedia</a>
+			<a href="Recordatorio.html"><i class="icon-bell-alt"></i>Recordatorio</a>
+			<a href="My Profile.html"><i class="icon-user-male"></i>Mi Perfil</a>
+			<a href="Settings.html"><i class="icon-cog"></i>Configuración</a>
+		</nav>
+			<label for="btn-menu" class="icon-cancel"></label>
+	</div>
+</div>
+	<div class="message">
+		<div class="card1">
+			<a href="javascript:open()">
+			<h2>Bienvenidos a School Time Tracker</h2>
+			</a>
+		</div>
+		<div class="card2">
+			<a href="javascript:opened()">
+			<h2>Nuestra Plataforma</h2>
+		</a>
+		</div>
+		<div class="card3">
+			<a href="javascript:abierto()">
+			<h2>About us</h2>
+		</a>
+		</div>
+		<div class="card4">
+			<a href="javascript:abrir()">
+			<h2>Horario</h2>
+			</a>
+		</div>
+		<div class="card5">
+			<a href="javascript:into()">
+			<h2>Recordatorio</h2>
+		</a>
+		</div>
+		<div class="card6">
+			<a href="javascript:put()">
+			<h2>Multimedia</h2>
+		</a>
+		</div>
+	</div>
+	<div class="notify" id="notify">
+		<a href="javascript:cerrar()"><i class="icon-cancel"></i></a>
+		Aquí encontrarás almacenados todos los links de tus clases virtuales. Haz clic <a href="Schedule.html">aquí</a>
+	</div>
+	<div class="media" id="media">
+		<a href="javascript:on()"><i class="icon-cancel"></i></a>
+		Aquí encontrarás almacenados algunas fotos y videos de la institución. Haz clic <a href="Multimedia/Multimedia.html">aquí</a>
+	</div>
+	<div class="Recordatorio" id="Recordatorio">
+		<a href="javascript:out()"><i class="icon-cancel"></i></a>
+		Cada vez que se abra una tarea, la notificación aparecerá aquí y en tu correo. Haz clic <a href="Recordatorio.html">aquí</a>
+	</div>
+	<div class="us" id="us">
+		<a href="javascript:cerrado()"><i class="icon-cancel"></i></a>
+		Somos School Time Tracker y te ofrecemos lo mejor para que tengas una organización con tus clases y trabajos. Para eso, interactúa con la página e identifica la sección de horario y recordatorio.
+	</div>
+	<div class="our" id="our">
+		<a href="javascript:closed()"><i class="icon-cancel"></i></a>
+		¡Interactúa con las diferentes herramientas de este plataforma!
+	</div>
+	<div class="stt" id="stt">
+		<a href="javascript:close()"><i class="icon-cancel"></i></a>
+		Bienvenidos a School Time Tracker estudiantes y padres de familia, a continuación presentamos esta plataforma en donde los estudiantes podrán tener un mejor orden para sus clases. Esta es una plataforma común y corriente, no hay nada que ellos desconozcan y se les presente algún inconveniente.
+	</div>
+	<div class="button">
+		<input type="button" value="Nuevo Mensaje">
+		<input type="button" value="Mensajes Eliminados">
+	</div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+	<script>
+		function abrir(){
+    		document.getElementById("notify") .style.display="block";
+		}
+		function cerrar(){
+    		document.getElementById("notify") .style.display="none";
+		}
+		function open(){
+    		document.getElementById("stt") .style.display="block";
+		}
+		function close(){
+    		document.getElementById("stt") .style.display="none";
+		}
+		function opened(){
+    		document.getElementById("our") .style.display="block";
+		}
+		function closed(){
+    		document.getElementById("our") .style.display="none";
+		}
+		function abierto(){
+    		document.getElementById("us") .style.display="block";
+		}
+		function cerrado(){
+    		document.getElementById("us") .style.display="none";
+		}
+		function into(){
+    		document.getElementById("Recordatorio") .style.display="block";
+		}
+		function out(){
+    		document.getElementById("Recordatorio") .style.display="none";
+		}
+		function put(){
+    		document.getElementById("media") .style.display="block";
+		}
+		function on(){
+    		document.getElementById("media") .style.display="none";
+		}
+	</script>
+	<footer>
+		@2021 - School Time Tracker Created By Nataly Alarcón, Marck Durán & Nasly Gallego
+	</footer>
+</body>
+</html>
